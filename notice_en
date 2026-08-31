@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlanMoa - 나를 위한 계획 관리</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: #f7f8fc;
+    color: #20243a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+                 "Apple SD Gothic Neo", sans-serif;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 22px 18px 30px; }
+  .hero {
+    background: linear-gradient(145deg, #6675f5, #7d63e8);
+    color: white;
+    border-radius: 26px;
+    padding: 28px 24px 25px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(82, 79, 170, .20);
+  }
+  .app-icon {
+    width: 76px; height: 76px; margin: 0 auto 13px;
+    border-radius: 21px;
+    background: rgba(255,255,255,.18);
+    border: 1px solid rgba(255,255,255,.35);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 39px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+  }
+  h1 { margin: 0; font-size: 28px; letter-spacing: -1px; }
+  .tagline { margin: 5px 0 0; font-size: 15px; opacity: .94; }
+  .intro {
+    margin: 20px 2px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #454b63;
+  }
+  .intro strong { color: #5b5eea; }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11px;
+    margin-top: 20px;
+  }
+  .card {
+    background: white;
+    border-radius: 18px;
+    padding: 17px 15px;
+    box-shadow: 0 5px 18px rgba(35,42,75,.07);
+    border: 1px solid #eef0f7;
+  }
+  .emoji { font-size: 27px; margin-bottom: 5px; }
+  .card b { display: block; font-size: 15px; margin-bottom: 3px; }
+  .card span { display: block; font-size: 13px; color: #6a7085; line-height: 1.5; }
+  .message {
+    margin-top: 20px;
+    background: white;
+    border-radius: 20px;
+    padding: 22px 20px;
+    border: 1px solid #eef0f7;
+    box-shadow: 0 5px 18px rgba(35,42,75,.06);
+  }
+  .message h2 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    letter-spacing: -.5px;
+  }
+  .message p { margin: 7px 0; font-size: 14px; color: #50566b; }
+  .quote {
+    margin-top: 16px;
+    padding: 15px 16px;
+    border-radius: 15px;
+    background: #f2f3ff;
+    color: #4d51c8;
+    font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+  }
+  .cta {
+    margin-top: 19px;
+    text-align: center;
+    padding: 19px 16px;
+    border-radius: 19px;
+    background: #20243a;
+    color: white;
+  }
+  .cta b { font-size: 17px; }
+  .cta p { margin: 4px 0 0; font-size: 13px; opacity: .78; }
+  .footer { text-align:center; color:#9a9fb1; font-size:11px; margin-top:18px; }
+  @media (max-width: 430px) {
+    .wrap { padding: 14px 13px 24px; }
+    .hero { padding: 24px 17px 22px; }
+    h1 { font-size: 25px; }
+    .cards { gap: 8px; }
+    .card { padding: 14px 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <section class="hero">
+    <div class="app-icon">✓</div>
+    <h1>플랜모아</h1>
+    <div class="tagline">Plan + 모아, 나의 모든 계획을 한곳에</div>
+  </section>
+
+  <p class="intro">
+    <strong>플랜모아</strong>는 단순히 일정을 기록하는 앱을 넘어,<br>
+    오늘의 계획을 내일의 습관과 목표로 이어주는 <strong>나만의 자기관리 도구</strong>입니다.
+  </p>
+
+  <section class="cards">
+    <div class="card">
+      <div class="emoji">📅</div>
+      <b>스마트 일정 관리</b>
+      <span>일정·메모·카테고리·중요도·진행상태를 한눈에 관리하세요.</span>
+    </div>
+    <div class="card">
+      <div class="emoji">🎯</div>
+      <b>목표 관리</b>
+      <span>해야 할 일을 목표와 연결해 꾸준히 실천할 수 있습니다.</span>
+    </div>
+    <div class="card">
+      <div class="emoji">🤖</div>
+      <b>AI 일정 분석</b>
+      <span>나의 일정 패턴을 분석하고 더 효율적인 계획을 만들어 보세요.</span>
+    </div>
+    <div class="card">
+      <div class="emoji">🔄</div>
+      <b>AI 루틴 설계</b>
+      <span>반복되는 생활과 목표를 바탕으로 나에게 맞는 루틴을 설계합니다.</span>
+    </div>
+    <div class="card">
+      <div class="emoji">🎙️</div>
+      <b>음성으로 기록</b>
+      <span>통화 녹음이나 음성 내용을 분석해 필요한 메모와 일정을 정리할 수 있습니다.</span>
+    </div>
+    <div class="card">
+      <div class="emoji">📊</div>
+      <b>나의 변화 확인</b>
+      <span>기록된 일정과 활동을 통해 나의 실천과 흐름을 돌아보세요.</span>
+    </div>
+  </section>
+
+  <section class="message">
+    <h2>계획은 세우는 것보다, 실천하는 것이 중요합니다.</h2>
+    <p>
+      바쁜 하루 속에서 해야 할 일이 많아질수록 중요한 것은
+      머릿속에 담아두는 것이 아니라 <b>기록하고, 확인하고, 실천하는 것</b>입니다.
+    </p>
+    <p>
+      작은 일정 하나를 기록하는 습관이 하루를 바꾸고,
+      하루하루의 실천이 결국 나의 목표를 만들어 갑니다.
+    </p>
+    <div class="quote">“오늘의 계획이 내일의 나를 만듭니다.”</div>
+  </section>
+
+  <section class="cta">
+    <b>지금, 플랜모아와 시작해 보세요 ✨</b>
+    <p>나의 일정 · 목표 · 루틴을 한곳에 모으고<br>더 계획적인 나를 만들어 보세요.</p>
+  </section>
+
+  <div class="footer">PLANMOA · 나의 계획을 모아, 더 나은 하루로</div>
+</div>
+</body>
+</html>
