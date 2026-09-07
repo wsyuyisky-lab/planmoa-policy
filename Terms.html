@@ -13,12 +13,34 @@ background:#f5f7fb;
 color:#222;
 line-height:1.75;
 }
-.policy-language-title {
-  margin-bottom: 4px;
-  font-size: 12px;
-  font-weight: 600;
-  color: #666;
-}  
+  .region-switch {
+  margin: 20px 0 30px;
+  padding: 13px 16px;
+  background: #f7f8fa;
+  border: 1px solid #e2e5e9;
+  border-radius: 9px;
+  font-size: 14px;
+    }
+    .region-switch .title {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    } 
+    .region-switch a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .region-switch a:hover {
+      text-decoration: underline;
+    }
+
+    .region-switch .sep {
+      margin: 0 8px;
+      color: #aaa;
+    }
 .container{
 max-width:900px;
 margin:0 auto;
@@ -87,7 +109,9 @@ font-size:19px;
 
 <h1>플랜모아(PlanMoa) 이용약관</h1>
 <p class="date">시행일자: 2026년 06월 01일</p>
-<div class="policy-language-switch">
+  
+<div class="region-switch">
+  <span class="title">Region / Language</span>
   <a href="https://wsyuyisky-lab.github.io/planmoa-policy/Terms-en-us.html">
     United States (English)
   </a>
@@ -98,6 +122,7 @@ font-size:19px;
     Japan (日本語)
   </a>
 </div>
+  
 <div class="notice">
 본 약관은 플랜모아(PlanMoa) 서비스 이용과 관련하여 운영자와 이용자 간의 권리, 의무 및 책임사항을 규정합니다.
 </div>
