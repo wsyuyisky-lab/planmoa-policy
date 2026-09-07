@@ -8,12 +8,34 @@
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Yu Gothic",Meiryo,Arial,sans-serif;background:#f5f7fb;color:#222;line-height:1.8}
 .container{max-width:900px;margin:0 auto;padding:24px 16px 60px}
 .card{background:#fff;border-radius:18px;padding:34px;box-shadow:0 8px 28px rgba(0,0,0,.08)}
-.policy-language-title {
-  margin-bottom: 4px;
-  font-size: 12px;
-  font-weight: 600;
-  color: #666;
-}  
+  .region-switch {
+  margin: 20px 0 30px;
+  padding: 13px 16px;
+  background: #f7f8fa;
+  border: 1px solid #e2e5e9;
+  border-radius: 9px;
+  font-size: 14px;
+    }
+    .region-switch .title {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    } 
+    .region-switch a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .region-switch a:hover {
+      text-decoration: underline;
+    }
+
+    .region-switch .sep {
+      margin: 0 8px;
+      color: #aaa;
+    }
 h1{font-size:28px;color:#1f3b73;margin-bottom:8px}
 h2{font-size:21px;color:#263b5e;margin-top:34px;padding-bottom:8px;border-bottom:1px solid #e6eaf2}
 h3{font-size:17px;margin-top:22px}
@@ -33,7 +55,9 @@ th{background:#f0f4fb}
 
 <h1>PlanMoa プライバシーポリシー</h1>
 <p class="date">施行日：2026年6月1日</p>
-<div class="policy-language-switch">
+  
+<div class="region-switch">
+  <span class="title">Region / Language</span>
   <a href="https://wsyuyisky-lab.github.io/planmoa-policy/privacy-en-us.html">
     United States (English)
   </a>
@@ -44,6 +68,7 @@ th{background:#f0f4fb}
   <span>|</span>
   <strong>Japan (日本語)</strong>
 </div>
+  
 <div class="notice">
 PlanMoa（プランモア）は、ユーザーのプライバシーを尊重し、適用される法令に従い、サービスの提供および改善に必要な範囲で個人情報を取り扱います。
 </div>
